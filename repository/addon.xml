@@ -254,6 +254,178 @@
         <source>https://github.com/phil65/script.module.autocompletion</source>
     </extension>
 </addon>
-	
+<addon id="plugin.video.torrentino"
+	   name="Torrentino"
+	   version="5.0"
+	   provider-name="NoName">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+        <import addon="script.module.xbmcswift2" version="2.4.0"/>
+        <import addon="script.module.urllib3" version="1.22" optional="true"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.service" library="service.py" start="startup" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="he">Torrentino</summary>
+    <description lang="he">Torrentino</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.optimus"
+	   name="Optimus"
+	   version="5.0.0"
+	   provider-name="Darkness">
+  <requires>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The single light in the Darkness</summary>
+    <description lang="en">All the media as fast as possible</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.Luna"
+	   name="Luna"
+	   version="7.0.0"
+	   provider-name="Luna">
+	   <requires>
+    <import addon="script.module.resolveurl" version="5.0.00"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+	<import addon="script.module.requests"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Luna</summary>
+    <description lang="en"> סרטים+ וילדים+</description>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.video.wrestling-on-demand" name="Wrestling On Demand" version="8.0" provider-name="The Boogeyman">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+	<import addon="script.module.urlresolver"  version="2.1.2"/>
+    <import addon="script.module.liveresolver" version="0.1.24"/>
+    <import addon="script.common.plugin.cache" version="2.5.2"/>
+    <import addon="script.module.metahandler" version="2.5.1"/>
+    <import addon="plugin.video.youtube" />
+  </requires>
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">The Home Of Wrestling On Demand</summary>
+    <description lang="en">The Home Of Wrestling On Demand | </description>
+    <platform>all</platform>
+  </extension>
+</addon>	
+<addon id="plugin.video.filmix" version="5.0.0" name="Filmix" provider-name="vl.maksime">
+    <requires>
+        <import addon="xbmc.python" version="2.19.0"/>
+        <import addon="script.module.simplemedia" version="1.2.6"/>
+        <import addon="script.module.filmix.cert" version="0.9.4"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.service" library="service.py" />
+    <extension point="xbmc.addon.metadata">
+        <summary lang="en"></summary>
+        <summary lang="ru">Смотреть онлайн фильмы и сериалы бесплатно</summary>
+        <description lang="en"></description>
+        <description lang="ru">Дополнение для онлайн-кинотеатра Filmix! В нашей базе 60000 разных видео, каждый из которых доступен вашему просмотру бесплатно и в отличном качестве. Выбирайте по вкусу и по настроению.</description>
+        <language>ru</language>
+        <platform>all</platform>
+        <license>GPL-3.0-only</license>
+        <forum>http://xbmc.ru/forum/showthread.php?t=16408</forum>
+        <website>https://filmix.co/</website>
+        <email>vl.maksime@gmail.com</email>
+        <source>https://github.com/vlmaksime/plugin.video.filmix</source>
+        <news>v1.2.11 (2020-11-22)[CR]- Поправил совместимость со старыми ELEC системами, которые используют LibreSSL[CR]- В настройках добавлено качество 360p[CR]- Реализовано принудительное использование TLSv1.0[CR]- Исправлены мелкие ошибки</news>
+        <assets>
+            <icon>icon.png</icon>
+            <fanart>fanart.jpg</fanart>
+            <clearlogo>resources\media\clearlogo.png</clearlogo>
+        </assets>
+    </extension>
+</addon>
+<addon id="plugin.video.tivix.net" name="Tivix.net" version="5.0.0" provider-name="mrstealth, dandy">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.xbmc.helpers" version="2.1.0"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">>
+        <provides>video</provides>
+    </extension>
+    <extension point= "xbmc.addon.metadata">
+        <summary>Tivix.net</summary>
+        <description>Tivix.net</description>
+        <description>For personal use only</description>
+        <platform>all</platform>
+    </extension>
+</addon>
+<addon id="plugin.video.balandro" name="Balandro" version="5.0.0" provider-name="Balandro">
+
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+
+  <extension point="xbmc.python.pluginsource" library="default.py">
+    <provides>video</provides>
+  </extension>
+
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Balandro addon</summary>
+    <description lang="es">Balandro es un navegador para webs con vídeos de películas y series, derivado de pelisalacarta y alfa.</description>
+    <disclaimer lang="es">[COLOR red]The owners and submitters to this addon do not host or distribute any of the content displayed by these addons nor do they have any affiliation with the content providers.[/COLOR]</disclaimer>
+
+    <news>Últimas modificaciones de Balandro:
+
+    Canales modificados: Cuevana3, Playview, Inkapelis, Cinecalidad, Hdfull, Movidy, 
+    Seriesmetro, Serieflix, Newpct1, Grantorrent, Descargacineclasico, Pelisplay.
+    Servidores modificados: Doodstream, Vidia, Gounlimited, Youtube, Videossh, 
+    Streamtape, Gamovideo, Yourupload.
+    Añadido cliente Torrest para torrents.
+    </news>
+
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
+
+    <platform>all</platform>
+    <license>GNU GPL v3</license>
+    <forum>https://www.mimediacenter.info/foro/viewforum.php?f=44</forum>
+    <website>https://balandro.tk</website>
+    <email>my@email.com</email>
+    <source>...</source>
+  </extension>
+
+  <extension point="xbmc.service" library="services.py" start="login|startup"/>
+
+</addon>
+<addon id="plugin.video.turkvod" name="TURKvod" version="19.0.0" provider-name="berkenkey">   
+  <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary>Support: www.turk-dreamworld.com</summary>
+        <description>Support: www.turk-dreamworld.com</description>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+  </extension>
+</addon>	
+
 	
 </addons>
